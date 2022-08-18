@@ -66,6 +66,8 @@ async function renderDataToHTML(event, arg) {
                 jsbarcode-height="${arg.line.height ? arg.line.height : 15}"
                 jsbarcode-fontsize="${arg.line.fontsize ? arg.line.fontsize : 12}"
                 jsbarcode-margin="0"
+                jsbarcode-fontOptions="${arg.line.fontOptions ? arg.line.fontOptions : ''}"
+                jsbarcode-font="${arg.line.font ? arg.line.font : 'Ink Free'}"
                 jsbarcode-displayvalue="${!!arg.line.displayValue}"/></div>`);
                 JsBarcode(`.barCode${arg.lineIndex}`).init();
                 // send
